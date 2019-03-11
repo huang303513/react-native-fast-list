@@ -37,9 +37,9 @@
 
 ## Usage
 ```javascript
-import RNSFastList from 'react-native-fast-list';
+import FlatList from 'react-native-fast-list';
 
 // TODO: What to do with the module?
-RNSFastList;
+FlatList;
 ```
   # react-native-fast-list
