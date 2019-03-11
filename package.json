@@ -4,14 +4,13 @@
   "version": "1.0.0",
   "description": "通过native来渲染react native list",
   "main": "src/index.js",
-  "files": [
-    "src/"
-  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "react-native"
+    "react-native",
+    "fast-list",
+    "react-native-fast-list"
   ],
   "author": "huang2009303513@gmail.com",
   "license": "MIT",
