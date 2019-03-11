@@ -1,0 +1,26 @@
+
+{
+  "name": "react-native-fast-list",
+  "version": "1.0.0",
+  "description": "通过native来渲染react native list",
+  "main": "src/index.js",
+  "files": [
+    "src/"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react-native"
+  ],
+  "author": "huang2009303513@gmail.com",
+  "license": "MIT",
+  "devDependencies":{
+    "react": "16.6.3",
+    "react-native": "0.58.6"
+  },
+  "peerDependencies": {
+    "react": "16.6.3",
+    "react-native": "0.58.6"
+  }
+}
