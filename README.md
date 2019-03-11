@@ -42,4 +42,4 @@ import RNSFastList from 'react-native-fast-list';
 // TODO: What to do with the module?
 RNSFastList;
 ```
-  
+  # react-native-fast-list
