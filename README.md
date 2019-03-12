@@ -14,6 +14,11 @@
 
 #### iOS
 
+依赖库：
+'UITableView+FDTemplateLayoutCell'//cell高度处理
+'Masonry'//布局
+'MJRefresh'//刷新
+
 1. In XCode, in the project navigator, right click `Libraries` ➜ `Add Files to [your project's name]`
 2. Go to `node_modules` ➜ `react-native-fast-list` and add `RNSFastList.xcodeproj`
 3. In XCode, in the project navigator, select your project. Add `libRNSFastList.a` to your project's `Build Phases` ➜ `Link Binary With Libraries`

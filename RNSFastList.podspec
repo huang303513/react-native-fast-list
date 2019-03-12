@@ -1,9 +1,9 @@
 
 Pod::Spec.new do |s|
   s.name         = "RNSFastList"
-  s.version      = "1.0.4"
+  s.version      = "1.0.5"
   s.summary      = "react-native-fast-list"
-  s.description  = "react-native-fast-list, use native to rend rn data"
+  s.description  = "react-native-fast-list, use native to rend rn datalist"
   s.homepage     = "huang2009303513"
   s.license      = "MIT"
   s.author             = { "author" => "huang2009303513@gmail.com" }

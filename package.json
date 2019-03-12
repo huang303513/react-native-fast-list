@@ -1,9 +1,9 @@
 
 {
   "name": "react-native-fast-list",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "通过native来渲染react native list",
-  "main": "src/index.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
