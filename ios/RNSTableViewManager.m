@@ -30,6 +30,7 @@ RCT_EXPORT_VIEW_PROPERTY(onRefresh, RCTDirectEventBlock)
 RCT_EXPORT_VIEW_PROPERTY(onEndReached, RCTDirectEventBlock)
 RCT_EXPORT_VIEW_PROPERTY(columns, NSInteger);
 RCT_EXPORT_VIEW_PROPERTY(pullToRefresh, BOOL);
+RCT_EXPORT_VIEW_PROPERTY(showFreeBuy, BOOL);
 RCT_EXPORT_VIEW_PROPERTY(onScroll, RCTDirectEventBlock);
 RCT_EXPORT_VIEW_PROPERTY(onScrollBeginDrag, RCTDirectEventBlock);
 

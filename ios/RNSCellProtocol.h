@@ -10,11 +10,11 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-
 @protocol RNSCellProtocol <NSObject>
 
-@required
+@optional
 -(void)setupCellWithParams:(NSDictionary *)params isCurrentVersionOnline:(BOOL)isCurrentVersionOnline;
+-(void)setupCellWithParams:(NSDictionary *)params isCurrentVersionOnline:(BOOL)isCurrentVersionOnline showFreeBuy:(BOOL)showFreeBuy;
 
 
 @end

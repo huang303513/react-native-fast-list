@@ -22,6 +22,8 @@ NSString *const RNSDefaultTableViewCellIdentifier = @"RNSDefaultTableViewCellIde
 
 @interface RNSTableView ()<UITableViewDataSource, UITableViewDelegate,RNSViewProtocol,UIScrollViewDelegate>
 
+@property(nonatomic, assign)BOOL showFreeBuy;
+
 @property(nonatomic, assign)CGFloat cacheHeight;
 
 @end
@@ -37,6 +39,7 @@ NSString *const RNSDefaultTableViewCellIdentifier = @"RNSDefaultTableViewCellIde
     
     self.pullToRefresh = true;
     self.isCurrentVersionOnline = true;
+    self.showFreeBuy = false;
     
     self.tableView = [[UITableView alloc]init];
     self.tableView.delegate = self;
@@ -179,7 +182,7 @@ NSString *const RNSDefaultTableViewCellIdentifier = @"RNSDefaultTableViewCellIde
   }
   if (self.data.count > indexPath.row) {
     NSDictionary *params = self.data[indexPath.row];
-    [cell setupCellWithParams:params isCurrentVersionOnline:self.isCurrentVersionOnline];
+      [cell setupCellWithParams:params isCurrentVersionOnline:self.isCurrentVersionOnline showFreeBuy:self.showFreeBuy];
   }
   return cell;
 
@@ -196,7 +199,7 @@ NSString *const RNSDefaultTableViewCellIdentifier = @"RNSDefaultTableViewCellIde
     CGFloat height = [tableView fd_heightForCellWithIdentifier:RNSTableViewCellIdentifier configuration:^(id cell) {
       if (self.data.count > indexPath.row) {
         NSDictionary *params = self.data[indexPath.row];
-        [cell setupCellWithParams:params isCurrentVersionOnline:self.isCurrentVersionOnline];
+        [cell setupCellWithParams:params isCurrentVersionOnline:self.isCurrentVersionOnline  showFreeBuy:self.showFreeBuy];
       }
     }];
     self.cacheHeight = height;
@@ -222,7 +225,7 @@ NSString *const RNSDefaultTableViewCellIdentifier = @"RNSDefaultTableViewCellIde
 //}
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView{
-  dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+  dispatch_async(dispatch_get_main_queue(), ^{
     self.onScroll(@{@"contentOffset":@{ @"y":@(scrollView.contentOffset.y),@"x":@(scrollView.contentOffset.x)}});
   });
 }
